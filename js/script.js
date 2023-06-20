@@ -33,6 +33,11 @@ const app = Vue.createApp({
             ]
 
         }
+    },
+    computed: {
+
+    },
+    methods: {
     }
 });
 
