@@ -37,9 +37,16 @@
                         <input v-model="task.done" type="checkbox">
                     </label>
                     {{ task.text }}
+                    <!-- button -->
                     <button @click="deleteTask(task.text)" type="button" class="btn-close" aria-label="Close"></button>
                 </li>
             </ul>
+            <!-- add task -->
+            <div class="input-group mt-3">
+                <input v-model="newText" type="text" class="form-control" placeholder="Inserisci nuova task">
+                <!-- button -->
+                <button @click="addNewTask" class="btn btn-dark" type="button" id="button-addon2">Aggiungi</button>
+            </div>
         </div>
 
 

@@ -4,6 +4,7 @@ const app = Vue.createApp({
     name: 'Darth List',
     data() {
         return{
+            newText: '',
             tasks: [
                 {
                     text: 'Conquistare il mondo',
@@ -41,6 +42,10 @@ const app = Vue.createApp({
         deleteTask(targetText) {
             this.tasks = this.tasks.filter(task => task.text !== targetText)
         },
+        addNewTask() {
+            const newTask = {text: this.newText, done: false};
+            this.tasks.push(newTask);
+        }
     }
 });
 

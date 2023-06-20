@@ -9,3 +9,8 @@
 5. creare un button per eliminare un elemento dalla lista
    - mettere in ascolto il bottone
    - al click vedrò in pagina la stessa lista filtrata con l'elemento cliccato in meno
+     - filtrare la lista di partenza e rendere l'elemento cliccato **false**
+6. creare un input di testo con un bottone
+   - collegare il testo ad una chiave in data
+   - mettere in ascolto il bottone
+     - al click creare un nuovo oggetto (con done) che abbia come text il testo immesso dall'utente
