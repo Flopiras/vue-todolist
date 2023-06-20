@@ -1,6 +1,7 @@
 console.log('Vue ok', Vue);
 
 const app = Vue.createApp({
+    name: 'Darth List',
     data() {
         return{
             tasks: [
