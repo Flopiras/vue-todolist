@@ -31,8 +31,7 @@
         <!-- list -->
         <div class="container text-center" id="list">
             <ul class="list-group list-group-flush">
-                <li class="list-group-item">An item</li>
-                <li class="list-group-item">An item</li>
+                <li v-for="task in tasks" class="list-group-item"> {{ task.text }} </li>
             </ul>
         </div>
 
