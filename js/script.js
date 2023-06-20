@@ -5,6 +5,7 @@ const app = Vue.createApp({
     data() {
         return{
             newText: '',
+            filter:'',
             tasks: [
                 {
                     text: 'Conquistare il mondo',
@@ -36,7 +37,14 @@ const app = Vue.createApp({
         }
     },
     computed: {
-   
+        filteredList() {
+
+            const text = this.filter;
+
+            const filteredList = this.tasks.filter((task) => {task.text.includes(text) ? true : false
+            })
+            return filteredList
+        }
     },
     methods: {
         deleteTask(targetText) {

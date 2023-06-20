@@ -30,6 +30,9 @@
         </header>
         <!-- list -->
         <div class="container text-center" id="list">
+            <!-- filtro -->
+            <input v-model="filter" type="text" class="form-control mb-3" placeholder="Cerca... ">
+
             <ul class="list-group list-group-flush">
                 <li v-for="task in tasks" :class="{'text-decoration-line-through' : task.done}"
                     class="list-group-item d-flex justify-content-between">
