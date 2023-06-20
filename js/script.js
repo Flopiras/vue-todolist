@@ -35,9 +35,12 @@ const app = Vue.createApp({
         }
     },
     computed: {
-
+   
     },
     methods: {
+        deleteTask(targetText) {
+            this.tasks = this.tasks.filter(task => task.text !== targetText)
+        },
     }
 });
 

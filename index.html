@@ -37,7 +37,7 @@
                         <input v-model="task.done" type="checkbox">
                     </label>
                     {{ task.text }}
-                    <button type="button" class="btn-close" aria-label="Close"></button>
+                    <button @click="deleteTask(task.text)" type="button" class="btn-close" aria-label="Close"></button>
                 </li>
             </ul>
         </div>
