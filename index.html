@@ -31,8 +31,11 @@
         <!-- list -->
         <div class="container text-center" id="list">
             <ul class="list-group list-group-flush">
-                <li v-for="task in tasks" :class="{'text-decoration-line-through' : task.done}" class="list-group-item">
-                    {{ task.text }} </li>
+                <li v-for="task in tasks" :class="{'text-decoration-line-through' : task.done}"
+                    class="list-group-item d-flex justify-content-between">
+                    {{ task.text }}
+                    <button type="button" class="btn-close" aria-label="Close"></button>
+                </li>
             </ul>
         </div>
 
