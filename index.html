@@ -43,7 +43,8 @@
             </ul>
             <!-- add task -->
             <div class="input-group mt-3">
-                <input v-model="newText" type="text" class="form-control" placeholder="Inserisci nuova task">
+                <input v-model="newText" @keyup.enter="addNewTask" type="text" class="form-control"
+                    placeholder="Inserisci nuova task">
                 <!-- button -->
                 <button @click="addNewTask" class="btn btn-dark" type="button" id="button-addon2">Aggiungi</button>
             </div>

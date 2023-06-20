@@ -45,6 +45,8 @@ const app = Vue.createApp({
         addNewTask() {
             const newTask = {text: this.newText, done: false};
             this.tasks.push(newTask);
+            // ripulire il campo dopo aver aggiunto l'elemento alla lista
+            this.newText = '';
         }
     }
 });
