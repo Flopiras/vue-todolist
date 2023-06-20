@@ -41,8 +41,7 @@ const app = Vue.createApp({
 
             const text = this.filter;
 
-            const filteredList = this.tasks.filter((task) => {task.text.includes(text) ? true : false
-            })
+            const filteredList = this.tasks.filter((task) => task.text.includes(text))
             return filteredList
         }
     },
