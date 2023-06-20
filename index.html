@@ -34,7 +34,7 @@
             <input v-model="filter" type="text" class="form-control mb-3" placeholder="Cerca... ">
 
             <ul class="list-group list-group-flush">
-                <li v-for="task in tasks" :class="{'text-decoration-line-through' : task.done}"
+                <li v-for="task in filteredList" :class="{'text-decoration-line-through' : task.done}"
                     class="list-group-item d-flex justify-content-between">
                     <label>
                         <input v-model="task.done" type="checkbox">
