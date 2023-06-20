@@ -1,6 +1,6 @@
 console.log('Vue ok', Vue);
 
-const app = Vue.createapp({
+const app = Vue.createApp({
     data() {
         return{
 
@@ -8,4 +8,4 @@ const app = Vue.createapp({
     }
 });
 
-app.mount('');
+app.mount('#root');
